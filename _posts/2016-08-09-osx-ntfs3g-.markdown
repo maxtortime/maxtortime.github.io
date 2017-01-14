@@ -1,0 +1,61 @@
+---
+layout: post
+title: "OSX에서 NTFS-3G 사용하기"
+date: "2016-08-09 13:22:27 +0900"
+---
+
+우분투를 써봤다면 우분투가 NTFS로 된 파티션도 잘 인식한다고 읽기/쓰기도 된다는 걸 알고 있을 것이다. 이것은 NTFS의 오픈소스 크로스 플랫폼 구현체인 [NTFS-3G](https://en.wikipedia.org/wiki/NTFS-3G) 덕분에 가능한 것이다. NTFS-3G는 FUSE로 구현되어 있다. FUSE는 Filesystem in Userspace의 약자로 커널단의 복잡한 체계를 신경쓰지 않고 스스로의 파일시스템을 구현할 수 있도록 해준다. (예제 코드 [참고](https://github.com/libfuse/libfuse/blob/master/example/fusexmp.c))
+
+사실 맥에서 NTFS를 쓸 일이 있겠냐고 생각하는 사람도 있겠지만 160GB의 용량을 가진 맥북을 쓰다보면 간혹 동영상을 맥북에서 보고 싶은데 160GB라는 갸날픈 용량에 동영상을 담기에는 힘들 때가 있다. 따라서 외장하드를 운용하게 되는데 보통 외장하드는 NTFS로 포맷하는 경우가 많을 것이다. 하지만 우리의 아름다움 맥북에 외장하드를 꼽아봐야 파일 읽기만 된다는 걸 맥북을 쓰시는 분은 모두 알고 있을 것이다.
+
+그렇다면 맥북에서 NTFS로 마운트된 디렉토리에 파일을 쓰는 법은 필자가 알아본 방법으론 총 2가지이다.
+
+1. [Mounty 사용하기](http://enjoygineering.com/mounty/)
+2. [Paragon 사용하기](https://www.paragon-software.com/ko/home/ntfs-mac/)
+
+각각의 장단점을 설명하자면 Mounty는 공짜이긴 한데 조금 쓰다보면 어느날 갑자기 마운트가 됬다 안 됬다하는 문제가 있다. 그 다음 Paragon은 무척 좋긴 했지만 유료라는 치명적인 단점이..
+
+그래서 OSX에도 NTFS-3G가 없나 했다가 OSXFUSE 라는 좋은 프로젝트를 찾을 수 있었다. 설치법은 [여기서 보라고](https://github.com/osxfuse/osxfuse/wiki/NTFS-3G) 하면 욕을 먹을 것 같으므로 아래를 참고하시길!
+
+먼저 터미널을 켜주시고 아래 명령어를 입력한다.
+
+
+```sh
+$ brew cask install osxfuse
+$ brew install homebrew/fuse/NTFS-3G
+```
+
+먼저 homebrew 를 이용해 osxfuse와 ntfs-3g를 차례로 설치한다. 다음은 현재 외장하드를 연결해놓은 상태라면 Finder나 터미널에서 외장하드의 마운트를 해제한다.
+
+
+```sh
+$ mount
+# 제 경우 disk2s1이고 mount 명령이 보여주는
+# 자신의 디바이스명을 입력하세요!!
+$ sudo umount /dev/disk2s1
+```
+
+
+자신의 디바이스명은 mount 명령을 치면 아래에서 볼 수 있듯이 ntfs인 /dev/disk2s1 임을 알 수 있다.
+
+
+```
+/dev/disk1 on / (hfs, local, journaled) devfs on /dev (devfs, local, nobrowse)
+map -hosts on /net (autofs, nosuid, automounted, nobrowse)
+map auto_home on /home (autofs, automounted, nobrowse)
+/dev/disk2s1 on /Volumes/ipTime500GB 1 (ntfs, local, nodev, nosuid, read-only, noowners)
+```
+
+다음 ntfs-3g를 이용해 마운트를 해본다.
+
+
+```sh
+sudo mkdir /Volumes/ntfs
+sudo /usr/local/bin/ntfs-3g /dev/disk2s1 /Volumes/NTFS -olocal
+```
+
+이렇게 하고 나서 Finder나 ls를 치셨을 때 파일크기들이 다 0바이트인데 당황하지 마시고 파일을 열어보면 된다. (OSXFUSE 버그 인 것 같다) 동영상 파일은 VLC를 쓰시는 걸 권장드림. (퀵타임은 오류가 남)
+
+이제 외장하드를 제거해야한다면 /Volumes/ntfs 나 /dev/disk2s1 를 언마운트 하면 된다. 파일을 여는 건 OSX 기본 NTFS로 해도 되니 파일을 쓴 다음에 언마운트하고 안정적이게 다시 여는 것도 좋을 듯 하다.
+
+부족한 글 읽어주셔서 감사합니다.

@@ -36,6 +36,7 @@ duration = timeit.default_timer()-start
 
 print(duration)
 ```
+
 # Sol 0: 해설
 * for 문을 돌며 하나씩 GET 요청을 보내는건 가장 쉽게 생각할 수 있는 해법이다.
 * 하지만 한 번에 한 URL 밖에 처리할 수 없기 때문에 무척 비효율적이다.
@@ -109,7 +110,6 @@ print(duration)
 [aiohttp]()는 Python 3.4부터 표준 라이브러리로 추가된 [asyncio](https://docs.python.org/dev/library/asyncio.html) [(PEP3156)](https://www.python.org/dev/peps/pep-3156/) 를 위한 HTTP 서버/클라이언트 프레임워크이다.
 
 ## aiohttp 의 다양한 기능
-aiohttp는 유용한 다수의 기능을 갖추고 있다.
 - Client/Server API
 - Persistent connections
 - Websockets

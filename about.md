@@ -9,12 +9,4 @@ permalink: /about/
 - [FAST Lab.](http://fast.ajou.ac.kr) undergraduate internship. (2015.10~2016.06)
 - Developing [NAVER Open project migration module](https://github.com/naver/devcenter-open-project-migration) (2016.07~2016.11)
 - NAVER Winter internship (2017.01~2017.02)
-
-# Interests
-* Python web framework (Flask, Django)
-* Python core
-* Game programming (Unity3D)
-* Linux kernel (Device driver, File system)
-* Network, distributed file system (Gluster, Lustre, Ceph ...)
-* C/C++ programming
-* Unity3D
+- 아주대학교 의료정보학과 특임연구원 (2017.04~)

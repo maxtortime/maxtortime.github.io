@@ -1,7 +1,5 @@
 ---
 published: true
-tag:
-  - flask - sqlalchemy - flask-migrate - alembic
 tags:
   - flask
   - sqlalchemy

@@ -1,6 +1,11 @@
 # maxtortime.github.io
-maxtortime 의 [홈페이지](https://maxtortime.me) 입니다.
+I modified this project https://github.com/BlackrockDigital/startbootstrap-resume.
+My Tech Blog moved to Medium. Please see here https://medium.com/@maxtortime_88708
 
-[기술 블로그](https://medium.com/@maxtortime_88708)로 old_posts 폴더의 글을 옮길 예정입니다.
+## Development
+```sh
+$ yarn install
+$ gulp dev
+```
 
-감사합니다.
+Feel free to create new issue when you find a problem.

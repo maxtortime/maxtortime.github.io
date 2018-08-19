@@ -3,7 +3,6 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
   font-family: 'Open Sans', 'Nanum Gothic', serif;
   padding-top: 54px;
@@ -47,8 +46,6 @@ h2 {
 
 .list-icons {
   font-size: 3rem; }
-  .list-icons .list-inline-item i:hover {
-    color: #007bff; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;

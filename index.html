@@ -15,8 +15,8 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -64,42 +64,39 @@
           <h1 class="mb-0">TAEHWAN
             <span class="text-primary">KIM</span>
           </h1>
-          <div class="subheading mb-5">WEB DEVELOPER, SUWON, SOUTH KOREA
-            <a href="mailto:thkim@aumc.ac.kr">thkim@aumc.ac.kr</a>
+          <div class="subheading mb-5">PYTHON DEVELOPER, SUWON, SOUTH KOREA
+            <a href="mailto:maxtortime@gmail.com">maxtortime@gmail.com</a>
           </div>
-          <p class="mb-5">아주대학교 미디어학과에서 유니티 3D로 게임 만들다가 졸업했습니다. 
-            지금은 아주대학교 의료정보학과에서 각종 웹 기술을 통해 의료연구에 쓰이는 소프트웨어를 개발하고 있습니다. 
-            Python 전반 및 각종 서버 기술에 관심이 많습니다. 최근에는 Vue.js 를 이용해 프론트엔드 웹 개발을 공부하고 있습니다.</p>
+          <p class="mb-5">I used to develop web application by Django and Flask. I develop medical research software from 
+            <a href='https://www.facebook.com/abmilab/'>Department of Biomedical Informatics</a>, <a href='http://www.ajou.ac.kr/en/'>Ajou University</a>.
+            I usually process hospital data from Eletronic health record structured by <a href='https://www.ohdsi.org/data-standardization/the-common-data-model/'>OMOP CDM</a>
+          </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/maxtortime">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-facebook fa-stack-2x"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://medium.com/@maxtortime_88708">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-medium fa-stack-2x"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/maxtortime/">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-linkedin fa-stack-2x"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://github.com/maxtortime">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-github fa-stack-2x"></i>
                 </span>
               </a>
             </li>
@@ -113,10 +110,23 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">DIVISION OF MEDICAL INFORMATICS, AJOU UNIVERSITY MEDICAL CENTER</div>
-              <p>주로 수집된 생체신호를 기반으로 하는 소프트웨어를 개발하고 유지보수하고 있습니다. 그리고 <a href="https://dementia-biobank.org/">만성뇌잘환 바이오뱅크 홈페이지</a> 웹 서버를 Flask로 개발하고 Docker-compose로 배포했습니다.
-                최근에는 <a href="http://ai-cts.com">인공지능 임상시험 시뮬레이션 시스템(AI-CTS)</a>을 Django 를 이용해서 개발하고 있습니다.
+              <h3 class="mb-0">A special researcher</h3>
+              <div class="subheading mb-3">Department of Biomedical Informatics, Ajou University</div>
+              <p>
+                I develop and maintain software based on collected bio-signals.
+                <ul>
+                  <li><a href="http://52.78.14.28:8080/">Bio-Signal Viewer</a>
+                  shows patient's bio-signal (ECG2, SpO2, ...) 
+                  </li>
+                  <li><a href="http://52.78.14.28:3000/">Bio-Signal Dashboard</a>
+                  shows how many bio-signals collected.
+                  </li>
+                </ul>
+                I also developed <a href='https://dementia-biobank.org/'>homepage</a> for <a href='http://www.monews.co.kr/news/articleView.html?idxno=95568'>CHRONIC CEREBROVASCULAR DISEASE BIOBANK business</a>.
+                This homepage developed by Flask and Bootstrap and deployed by docker-compose.
+                
+                Now I maninly develop AI-CTS (Artificial Intelligence Clinical Trial Simulation System). This system developed by Django and Vue.js. 
+                Currently, you can see demo version of this application on <a href='http://www.ai-cts.com/'>HERE</a>. I will update recent version before October.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -128,8 +138,9 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Intern</h3>
               <div class="subheading mb-3">NAVER</div>
-              <p>오디오 플랫폼에서 AudioClip 서비스 콘텐츠의 스크립트를 자동으로 추출하고 오류를 보정하는 웹 어플리케이션을 개발했습니다. 
-                Celery 로 비동기적으로 스크립트 추출 작업을 진행하고 Flask를 이용해 오류를 보정하는 웹 앱을 만들었습니다.</p>
+              <p>I develop web application using by fixing typo of <a href='https://audioclip.naver.com/'>AUDIOCLIP</a>'s content.
+                It can automatically generate script from STT engine. I developed that process by Python and Celery.
+              </p>           
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">December 2017 - March 2017</span>
@@ -140,9 +151,13 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Freelance developer</h3>
               <div class="subheading mb-3">NAVER</div>
-              <p>네이버 개발자 센터의 오픈 프로젝트의 서비스 중단으로 데이터를 사용자들이 GitHub로 이전할 수 있도록 하는 <a href="https://github.com/naver/devcenter-open-project-migration">소프트웨어</a>를 개발했습니다. 
-                순수 파이썬으로 개발했습니다. 오픈 프로젝트의 API를 이용해 XML로 데이터를 다운로드하고 데이터를 JSON으로 변환해서 GitHub API 를
-                이용해 저장소로 전송합니다.</p>
+              <a href='https://github.com/naver/devcenter-open-project-migration'>Source Code</a>
+              <p>
+                  I have developed software that allows users to migrate data to GitHub due to service disruption of the OPEN PROJECT. 
+                  I developed by Python and deployed to <a href='https://pypi.org/project/nforge-migration/'>PyPi</a>
+                  It downloads data to XML file using nForge API. Next, parse XML files to convert the data to JSON by BeautifulSoup and lxml. 
+                  Finally, It uses the GitHub API for uploading data to user's GitHub Repository.
+              </p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">December 2017 - March 2017</span>
@@ -158,45 +173,51 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicon-html5-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+              <i class="devicon-jquery-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicon-vuejs-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
-                <i class="devicons devicons-bootstrap"></i>
-              </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
+              <i class="devicon-python-plain colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-django"></i>
+              <i class="devicon-django-plain colored"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-docker"></i>
+              <i class="devicon-docker-plain-wordmark colored"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-linux-plain colored"></i>
             </li>
           </ul>
 
-          <div class="subheading mb-3">기술 요약</div>
+          <div class="subheading mb-3">Portfolio</div>
           <ul class="fa-ul mb-0">
             <li>
-              <i class="fa-li fa fa-circle"></i>
-              HTML / CSS 에 대해서는 웹을 구성하기 위한 아주 기본적인 지식만 가지고 있습니다. 보통은 부트스트랩을 이용해서 웹 디자인을 구성하는 편입니다.
+                <i class="fa-li fa fa-check"></i>
+                <a href="https://www.pycon.kr/2017/program/151">PYCON KR 2017 PRESENTATION</a>
             </li>
             <li>
-                <i class="fa-li fa fa-circle"></i>
-                보통 파이썬 웹 프레임워크를 쓰고 템플릿 엔진을 많이 쓰다보니 jQuery나 순수 JS를 이용해서 프론트엔드 개발을 많이 진행했습니다. 
-                요즘은 Vue.js를 써서 개발을 해나가면서 JS 생태계 및 프론트엔드 공부를 하고 있습니다.
+                <i class="fa-li fa fa-check"></i>
+                <a href='https://github.com/naver/devcenter-open-project-migration'>NAVER DEVCENTER OPEN PROJECT MIGRATION</a>
             </li>
             <li>
-                <i class="fa-li fa fa-circle"></i>
-                Flask 공부를 하면서 파이썬을 시작한 이후로 웹 개발이나 일반 응용 프로그램 개발에도 파이썬을 사용해왔습니다.
-                다양한 노력 끝에 파이콘 한국 2017에서도 <a href="https://www.pycon.kr/2017/program/151">발표</a>하는 성과를 이루어내기도 했습니다.
-                요즘은 Django를 공부하고 있습니다.
+                <i class="fa-li fa fa-check"></i>
+                <a href='https://github.com/naver/devcenter-open-project-migration'>EASYEDITOR</a>
             </li>
+            <li>
+                <i class="fa-li fa fa-check"></i>
+                <a href='https://medium.com/@maxtortime_88708'>Tech Blog</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-check"></i>
+                <a href='http://wntd.co/M2mIzp'>Korean Resume</a>
+            </li>
+            
           </ul>
         </div>
       </section>
@@ -204,56 +225,52 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <h3 class="mb-0">개발 관련</h3>
-          <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                Vue.js 개발을 포함한 프론트엔드 웹 개발
+          <p>
+            I love to play video games. I have PlayStation4 and Nintendo Switches both. 
+            My favorite video game series is <a href='https://namu.wiki/w/%EC%86%8C%EC%9A%B8%20%EC%8B%9C%EB%A6%AC%EC%A6%88'>Soul Series</a>.
+            I also want to be a Twitch streamer. I hope to buy proper device for broadcasting game. You can find my game account below, please feel free to visit.
+            <ul class="list-inline list-social-icons mb-0">
+               <li class="list-inline-item">
+                <a href="https://steamcommunity.com/id/maxtortime/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fab fa-steam fa-stack-2x"></i>
+                  </span>
+                </a>
               </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                딥러닝, 강화학습 등 인공지능 기술
-              </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                Django 웹 프레임워크, 파이썬 개발
-              </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                Docker를 이용한 배포 등 DevOps 기술
-              </li>
+              <li class="list-inline-item">
+                  <a href="https://www.youtube.com/channel/UCojbrhC8dWz-z5YIXIF8r7g">
+                    <span class="fa-stack fa-lg">
+                      <i class="fab fa-youtube fa-stack-2x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.twitch.tv/maxtortime">
+                    <span class="fa-stack fa-lg">
+                      <i class="fab fa-twitch fa-stack-2x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://my.playstation.com/profile/maxtortime">
+                      <span class="fa-stack fa-lg">
+                        <i class="fab fa-playstation fa-stack-2x"></i>
+                      </span>
+                    </a>
+                  </li>
             </ul>
-            <br>  
-          <h3 class="mb-0">취미</h3>
-          <ul class="fa-ul mb-0">
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                소울 시리즈(다크 소울 3, 블러드 본) 플레이
-              </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                러브라이브, 러브라이브 선샤인
-              </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                <a href="https://ko.wikipedia.org/wiki/%EC%96%BC%ED%84%B0%EB%84%88%ED%8B%B0%EB%B8%8C_%EB%A1%9D">얼터너티브 락</a>을 좋아합니다. 요즘은 락 페스티벌에도 자주 가보려 노력중입니다.
-              </li>
-              <li>
-                <i class="fa-li fa fa-circle"></i>
-                독서도 가끔 합니다. 요즘은 '당신들의 조국' 읽는 중입니다.
-              </li>
-            </ul>
+          </p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <p>함께 수상한 윤병준, 주지훈, 원민재 이 친구들에게 영광을 돌립니다.</p>
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              2016년도 글로벌 인디 게임제작 경진대회 대학부 제작부문 특별상 <strong>The Moment</strong></li>  
+              2016년도 글로벌 인디 게임제작 경진대회 대학부 제작부문 특별상 <strong>The Moment</strong></li>
+              
           </ul>
           <ul class="fa-ul mb-0">
             <li>
@@ -263,7 +280,7 @@
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              2016년 안양 슈퍼루키 공모전 대상</li>  
+              2016년 안양 슈퍼루키 공모전 대상</li>
             </ul>
         </div>
       </section>

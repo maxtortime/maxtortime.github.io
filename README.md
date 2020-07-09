@@ -1,11 +1,5 @@
-# maxtortime.github.io
-I modified this project https://github.com/BlackrockDigital/startbootstrap-resume.
-My Tech Blog moved to Medium. Please see here https://medium.com/@maxtortime_88708
+# @maxtortime homepage
 
-## Development
-```sh
-$ yarn install
-$ gulp dev
-```
-
-Feel free to create new issue when you find a problem.
+Jekyll 없이 마크다운만으로 블로그를 해보기
+ 
+[일상](daily/일상)

@@ -1,7 +1,5 @@
 ---
-layout: post
-title: "Jekyll을 세팅하지 않고 마크다운만으로 블로그를 할 수 있다"
-permalink: /tech/nojekyll
+layout: default
 ---
 
 ## Jekyll을 세팅하지 않고 마크다운만으로 블로그를 할 수 있다?

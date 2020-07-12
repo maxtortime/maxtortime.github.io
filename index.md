@@ -8,7 +8,3 @@ layout: default
 ## 기술
 - [Jekyll을 세팅하지 않고 마크다운만으로 블로그를 할 수 있다?](./tech/nojekyll.html)
 - [WSL2 입문하기 - Docker로 Jekyll을 세팅해보자](./tech/docker-jekyll.html)
-
-## 영업
-- ZUTOMAYO 
-- 쓰르라미 울 적에
